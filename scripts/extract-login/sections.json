@@ -1,0 +1,16 @@
+[
+  {
+    "selector": "[class*=footer]",
+    "tag": "DIV",
+    "classes": "footer-box div",
+    "text": "DCloud.io ®即数字天堂(北京)网络技术有限公司是 W3C成员及 HTML5中国产业联盟发起单位 国家信息安全等级保护三级 证书编号：11010813802-20001 京ICP备12046007号-4",
+    "childCount": 2
+  },
+  {
+    "selector": "[class*=footer]",
+    "tag": "DIV",
+    "classes": "footer-wrapper div",
+    "text": "DCloud.io ®即数字天堂(北京)网络技术有限公司是 W3C成员及 HTML5中国产业联盟发起单位 国家信息安全等级保护三级 证书编号：11010813802-20001",
+    "childCount": 2
+  }
+]
