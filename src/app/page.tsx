@@ -15,7 +15,7 @@ const navItems = [
 const heroStats = [
   { label: "活跃用户数据", value: "12 亿+" },
   { label: "开发插件数量", value: "19,027" },
-  { label: "广告合作应用", value: "29,952+" },
+  { label: "广告合作应用", value: "30,000+" },
 ];
 
 const platforms = [
@@ -96,13 +96,13 @@ const benefits = [
   },
   {
     title: "垫资服务",
-    description: "针对优质开发者提供垫资服务，在渠道 SDK 广告平台未结算时，由 DCloud 提前结算。",
+    description: "针对优质开发者提供垫资服务，在渠道 SDK 广告平台未结算时，由 LiangDian 提前结算。",
     image: "/images/cost_2x_20_3_.png",
   },
 ];
 
 const partnerLogos = [
-  { alt: "DCloud 生态", src: "/images/agent-logo_2x.png" },
+  { alt: "LiangDian 生态", src: "/images/agent-logo_2x.png" },
   { alt: "商务咨询", src: "/images/agent-icon_2x.png" },
   { alt: "扫码咨询", src: "/images/zey1103.png" },
 ];
@@ -111,14 +111,14 @@ export default function Home() {
   return (
     <main id="top" className="relative overflow-hidden bg-slate-950 text-slate-100">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-[radial-gradient(circle_at_top_left,rgba(95,146,255,0.28),transparent_20%),radial-gradient(circle_at_top_right,rgba(84,213,255,0.16),transparent_25%)]" />
-      <header className="sticky top-0 z-50 border-b border-slate-700/40 bg-slate-950/90 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 text-sm text-slate-200 sm:px-8">
-          <div className="flex items-center gap-4">
-            <img src="/images/dcloud.a7185bb1.png" alt="DCloud" className="h-5 w-auto" />
-            <span className="hidden sm:inline">登录</span>
+      <header className="sticky top-0 z-50 border-b border-slate-800/30 bg-slate-950/95 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 text-sm text-slate-200 sm:px-8">
+          <div className="flex items-center gap-3">
+            <img src="/images/adunion-logo-32.png" alt="LiangDian" className="h-24px w-24px" />
+            <span className="text-sm font-semibold text-slate-100">量点 广告联盟</span>
           </div>
           <div className="hidden gap-6 text-slate-300 lg:flex">
-            {navItems.slice(0, 6).map((item) => (
+            {navItems.map((item) => (
               <a key={item.label} href={item.href} className="transition hover:text-white">
                 {item.label}
               </a>
@@ -133,9 +133,9 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="border-t border-slate-800/80 bg-slate-950/95">
-          <div className="mx-auto flex max-w-7xl items-center justify-center gap-6 px-6 py-3 text-xs text-slate-300 sm:px-8">
-            <img src="/images/notice-a.b002ad1e.png" alt="通知" className="h-4 w-4 flex-none" />
+        <div className="border-t border-slate-800/30 bg-slate-950/95">
+          <div className="mx-auto flex max-w-7xl items-center justify-center gap-3 px-6 py-3 text-xs text-slate-300 sm:px-8">
+            <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-sky-500/10 text-sky-300">🔊</span>
             <p className="max-w-4xl leading-6">
               新增“网赚合成游戏”项目源码，变现利器！新增“有奖猜歌游戏”项目源码，趣味变现！
             </p>
@@ -146,19 +146,22 @@ export default function Home() {
       <section className="relative overflow-hidden px-6 pb-20 pt-10 sm:px-8 lg:px-10">
         <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[minmax(0,1fr)_460px] lg:gap-20">
           <div className="relative z-10 flex flex-col justify-center gap-8 pt-6 pb-12 lg:pt-16">
-            <div className="flex items-center gap-2 rounded-full border border-sky-400/20 bg-sky-400/10 px-4 py-2 text-sm text-sky-200">
-              uni-ad 开发者忠实的商业化合作伙伴
+            <div className="inline-flex items-center rounded-full border border-sky-400/20 bg-sky-400/10 px-4 py-2 text-sm text-sky-200">
+              开发者忠实的商业化合作伙伴
             </div>
             <div className="space-y-6">
-              <h1 className="max-w-3xl text-5xl font-semibold tracking-tight text-white sm:text-6xl">
-                大平台，诚信透明
+              <h1 className="max-w-3xl text-5xl font-black tracking-tight text-white sm:text-6xl">
+                量点
               </h1>
-              <p className="max-w-2xl text-lg leading-8 text-slate-300">
-                uni-ad 全平台变现、更多收益，帮助开发者用更少成本触达更多用户。立刻开始应用变现升级。
+              <p className="max-w-2xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
+                全平台变现、更多收益
+              </p>
+              <p className="max-w-2xl text-base leading-8 text-slate-300">
+                聚合 LiangDian 生态广告资源，支持 App、小程序、H5、PC 等全平台一键接入。
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <Button className="rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/20 hover:bg-sky-400">
+              <Button className="rounded-full bg-sky-500 px-6 py-3 font-semibold text-white shadow-lg shadow-sky-500/20 hover:bg-sky-400">
                 使用指南
               </Button>
               <a href="#contact" className="inline-flex items-center gap-2 rounded-full border border-slate-600 bg-slate-900/80 px-6 py-3 text-sm text-slate-200 transition hover:border-slate-400 hover:text-white">
@@ -173,11 +176,11 @@ export default function Home() {
                 </div>
               ))}
             </div>
+            <p className="text-sm text-slate-500">数据截至 2026 年 04 月</p>
           </div>
 
-          <div className="relative overflow-hidden rounded-[2rem] bg-slate-900/40 p-6 shadow-2xl shadow-slate-950/30 ring-1 ring-white/10 sm:p-8">
-            <img src="/images/posterimg_2x_20_1_.png" alt="Hero background" className="h-auto w-full rounded-[1.75rem] object-cover" />
-            <img src="/images/posterimg_2x_20_2_.png" alt="Hero illustration" className="pointer-events-none absolute right-4 top-4 h-[calc(100%-1.5rem)] w-[calc(100%-1.5rem)] object-contain" />
+          <div className="relative overflow-hidden rounded-[2rem] bg-slate-900/40 p-6 shadow-2xl shadow-slate-950/30 ring-1 ring-white/10 sm:p-8 flex flex-col justify-center">
+            <img src="/images/posterimg_2x_20_2_.png" alt="Hero illustration" className="h-auto w-full rounded-[1.75rem] object-cover" />
           </div>
         </div>
       </section>
@@ -220,7 +223,7 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-500">丰富的广告形式</p>
             <h2 className="text-4xl font-semibold text-slate-950 sm:text-5xl">全平台变现，更多收益</h2>
             <p className="mx-auto max-w-2xl text-base leading-7 text-slate-600">
-              uni-ad 提供开屏、信息流、激励视频、全屏视频、插屏和悬浮广告，覆盖多种场景和变现策略。
+              liangdian 提供开屏、信息流、激励视频、全屏视频、插屏和悬浮广告，覆盖多种场景和变现策略。
             </p>
           </div>
           <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
@@ -243,7 +246,7 @@ export default function Home() {
                   通过广告形式与内容紧密结合，实现更高的转化与用户体验。支持多媒体、短视频、内嵌、悬浮等多场景投放。
                 </p>
               </div>
-              <img src="/images/back6_2x.png" alt="Ad illustration" className="mt-8 w-full rounded-[1.5rem] object-cover" />
+              <img src="/images/posterimg_2x_20_1_.png" alt="Ad illustration" className="mt-8 w-full rounded-[1.5rem] object-cover w-500px" />
             </div>
           </div>
         </div>
@@ -253,9 +256,9 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 space-y-4 text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-500">场景变现</p>
-            <h2 className="text-4xl font-semibold text-slate-950 sm:text-5xl">更丰富的广告形式，更多收入场景</h2>
+            <h2 className="text-4xl font-semibold text-slate-950 sm:text-5xl text-white">更丰富的广告形式，更多收入场景</h2>
             <p className="mx-auto max-w-2xl text-base leading-7 text-slate-600">
-              uni-ad 支持短视频、新闻资讯、电商、电子书等内容变现方式，快速接入即可开始收益。
+              liangdian 支持短视频、新闻资讯、电商、电子书等内容变现方式，快速接入即可开始收益。
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -277,9 +280,9 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="space-y-6">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-500">安全防刷</p>
-            <h2 className="text-4xl font-semibold text-slate-950 sm:text-5xl">uni 云端一体安全网络</h2>
+            <h2 className="text-4xl font-semibold text-slate-950 sm:text-5xl">云端一体安全网络</h2>
             <p className="max-w-2xl text-lg leading-8 text-slate-600">
-              激励视频经常被刷，让开发者遭受损失，uni-ad 提供云端一体安全防刷方案，拒绝灰黑产、安心做业务。
+              激励视频经常被刷，让开发者遭受损失，liangdian 提供云端一体安全防刷方案，拒绝灰黑产、安心做业务。
             </p>
             <ul className="space-y-4 text-slate-600">
               <li>防止客户端伪造</li>
@@ -299,9 +302,9 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 space-y-4 text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-500">降低成本</p>
-            <h2 className="text-4xl font-semibold text-slate-950 sm:text-5xl">更低成本，更稳收益</h2>
+            <h2 className="text-4xl font-semibold text-slate-950 sm:text-5xl text-white">更低成本，更稳收益</h2>
             <p className="mx-auto max-w-2xl text-base leading-7 text-slate-600">
-              从开发到运维，再到结算，uni-ad 帮助开发者从多维度降低成本，提高收益效率。
+              从开发到运维，再到结算，liangdian 帮助开发者从多维度降低成本，提高收益效率。
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -323,7 +326,7 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div className="space-y-6">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-400">代理合作</p>
-              <h2 className="text-4xl font-semibold text-white sm:text-5xl">DCloud 授权广告代理服务商</h2>
+              <h2 className="text-4xl font-semibold text-white sm:text-5xl">LiangDian 授权广告代理服务商</h2>
               <p className="max-w-2xl text-lg leading-8 text-slate-300">
                 上海优蓍信息技术有限公司 有效期至 2026 年 4 月 25 日。开发者请注意商业变现合作请核实是否为官方授权广告代理。
               </p>
@@ -339,7 +342,7 @@ export default function Home() {
             <div className="rounded-[2rem] bg-white p-8 text-slate-950 shadow-2xl shadow-slate-950/10 ring-1 ring-slate-200/80">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-500">品牌背书</p>
               <p className="mt-3 text-lg leading-8">
-                uni-ad 依托 DCloud 生态，直接为开发者提供专业的变现服务。我们利用现有 12 亿活跃用户数据和多年技术沉淀，不断升级广告优化策略。
+                依托 LiangDian 生态，直接为开发者提供专业的变现服务。我们利用现有 12 亿活跃用户数据和多年技术沉淀，不断升级广告优化策略。
               </p>
             </div>
           </div>
@@ -408,8 +411,8 @@ export default function Home() {
             </div>
             <div className="rounded-3xl bg-slate-950 p-5 text-slate-100">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-400">联系方式</p>
-              <a href="mailto:uniad@dcloud.io" className="mt-3 block text-base text-white hover:text-sky-300">
-                uniad@dcloud.io
+              <a href="mailto:ad@liangdian.io" className="mt-3 block text-base text-white hover:text-sky-300">
+                ad@liangdian.io
               </a>
             </div>
           </div>
@@ -423,9 +426,7 @@ export default function Home() {
 
       <footer className="bg-slate-950 px-6 pb-8 pt-12 text-slate-400 sm:px-8 lg:px-10">
         <div className="mx-auto max-w-7xl space-y-4 text-sm leading-6">
-          <p>© DCloud.io ® 即数字天堂(北京)网络技术有限公司是 W3C 成员及 HTML5 中国产业联盟发起单位</p>
-          <p>国家信息安全等级保护三级 证书编号：11010813802-20001</p>
-          <p>京ICP备12046007号-4</p>
+          <p>©2026 深圳智维格网络信息科技有限公司 版权所有</p>
         </div>
       </footer>
     </main>

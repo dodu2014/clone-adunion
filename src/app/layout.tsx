@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "uni-ad 广告联盟 Clone",
-  description: "uni-ad landing page clone built with Next.js and Tailwind CSS.",
+  title: "量点 广告联盟",
+  description: "liangdian landing page clone built with Next.js and Tailwind CSS.",
 };
 
 export default function RootLayout({

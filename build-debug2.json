@@ -1,0 +1,12 @@
+{
+  "status": 1,
+  "signal": null,
+  "output": [
+    null,
+    "\n> ai-website-clone-template@0.3.1 build\n> next build\n\n",
+    "\n> Build error occurred\nError: EBUSY: resource busy or locked, rmdir 'd:\\forks\\clone-adunion\\.next\\standalone'\n    at ignore-listed frames {\n  errno: -4082,\n  code: 'EBUSY',\n  syscall: 'rmdir',\n  path: 'd:\\\\forks\\\\clone-adunion\\\\.next\\\\standalone'\n}\n"
+  ],
+  "pid": 51688,
+  "stdout": "\n> ai-website-clone-template@0.3.1 build\n> next build\n\n",
+  "stderr": "\n> Build error occurred\nError: EBUSY: resource busy or locked, rmdir 'd:\\forks\\clone-adunion\\.next\\standalone'\n    at ignore-listed frames {\n  errno: -4082,\n  code: 'EBUSY',\n  syscall: 'rmdir',\n  path: 'd:\\\\forks\\\\clone-adunion\\\\.next\\\\standalone'\n}\n"
+}
